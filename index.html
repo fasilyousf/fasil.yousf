@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,32 +10,48 @@
     <style>
         /* Custom animations */
         @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
         }
-        
+
         .floating {
             animation: float 5s ease-in-out infinite;
         }
-        
+
         @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
-        
+
         .gradient-bg {
             background: linear-gradient(-45deg, #3b82f6, #8b5cf6, #ec4899, #f97316);
             background-size: 400% 400%;
             animation: gradientBG 12s ease infinite;
         }
-        
+
         /* Smooth scroll */
         html {
             scroll-behavior: smooth;
         }
-        
+
         /* Gradient text */
         .gradient-text {
             background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
@@ -42,7 +59,7 @@
             background-clip: text;
             color: transparent;
         }
-        
+
         /* Glass morphism effect */
         .glass {
             background: rgba(255, 255, 255, 0.15);
@@ -50,19 +67,20 @@
             -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.18);
         }
-        
+
         /* Custom button hover effect */
         .btn-hover-effect {
             transition: all 0.3s ease;
             transform: translateY(0);
         }
-        
+
         .btn-hover-effect:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
+
 <body class="bg-gray-50 font-sans">
     <!-- Navigation -->
     <nav class="fixed w-full glass z-50">
@@ -73,10 +91,12 @@
                 </div>
                 <div class="hidden md:flex items-center space-x-10">
                     <a href="#home" class="text-white hover:text-blue-200 transition font-medium">Home</a>
-                    <a href="#" class="text-white hover:text-blue-200 transition font-medium">My 1st Project SaaS</a>
-                    <a href="./pages/my-skill.html" class="text-white hover:text-blue-200 transition font-medium">Skills</a>
-                    <a href="./pages/media.html" class="text-white hover:text-blue-200 transition font-medium">Contact</a>
-                     <a href="./pages/nexus.html" class="text-white hover:text-blue-200 transition font-medium">My Job (CMO)</a>
+                    <a href="./pages/my-skill.html"
+                        class="text-white hover:text-blue-200 transition font-medium">Skills</a>
+                    <a href="./pages/media.html"
+                        class="text-white hover:text-blue-200 transition font-medium">Contact</a>
+                    <a href="./pages/nexus.html" class="text-white hover:text-blue-200 transition font-medium">My Job
+                        (CMO)</a>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button id="menu-btn" class="text-white">
@@ -87,9 +107,12 @@
         </div>
         <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden glass py-3 px-6">
-            <a href="#home" class="block py-3 text-white hover:text-blue-200 transition border-b border-gray-700">Home</a>
-            <a href="#" class="block py-3 text-white hover:text-blue-200 transition border-b border-gray-700">My 1st Project SaaS</a>
-            <a href="./pages/my-skill.html" class="block py-3 text-white hover:text-blue-200 transition border-b border-gray-700">Skills</a>
+            <a href="#home"
+                class="block py-3 text-white hover:text-blue-200 transition border-b border-gray-700">Home</a>
+            <a href="#" class="block py-3 text-white hover:text-blue-200 transition border-b border-gray-700">My 1st
+                Project SaaS</a>
+            <a href="./pages/my-skill.html"
+                class="block py-3 text-white hover:text-blue-200 transition border-b border-gray-700">Skills</a>
             <a href="./pages/media.html" class="block py-3 text-white hover:text-blue-200 transition">Contact</a>
             <a href="./pages/nexus.html" class="text-white hover:text-blue-200 transition font-medium">My Job (CMO)</a>
         </div>
@@ -106,14 +129,16 @@
                     <span id="typed" class="font-semibold"></span>
                 </h2>
                 <p class="text-lg text-blue-100 mb-10 max-w-lg">
-                    I craft digital experiences that are beautiful, functional, and user-centric. Welcome to my creative space where ideas come to life.
+                    I craft digital experiences that are beautiful, functional, and user-centric. Welcome to my creative
+                    space where ideas come to life.
                 </p>
                 <div class="flex space-x-5">
-                    <a  href="tel:+917006960788" class="px-8 py-4 border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-blue-600 btn-hover-effect transition duration-300 flex items-center">
-                       Call Me <i class=""></i>
+                    <a href="tel:+917006960788"
+                        class="px-8 py-4 border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-blue-600 btn-hover-effect transition duration-300 flex items-center">
+                        Call Me <i class=""></i>
                     </a>
                     <a href="https://wa.me/917006960788" target="_blank" Chat on WhatsApp
- class="px-8 py-4 border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-blue-600 btn-hover-effect transition duration-300 flex items-center">
+                        class="px-8 py-4 border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-blue-600 btn-hover-effect transition duration-300 flex items-center">
                         Text Me <i class=""></i>
                     </a>
                 </div>
@@ -121,10 +146,12 @@
                     <a href="https://github.com/fasilyousf" class="text-white hover:text-blue-200 transition text-2xl">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/fasil-yousf-6847992a9/" class="text-white hover:text-blue-200 transition text-2xl">
+                    <a href="https://www.linkedin.com/in/fasil-yousf-6847992a9/"
+                        class="text-white hover:text-blue-200 transition text-2xl">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://www.instagram.com/fasil.yousf?igsh=MXV4cDV6ZW50ODF1aA==" class="text-white hover:text-blue-200 transition text-2xl">
+                    <a href="https://www.instagram.com/fasil.yousf?igsh=MXV4cDV6ZW50ODF1aA=="
+                        class="text-white hover:text-blue-200 transition text-2xl">
                         <i class="fab fa-instagram"></i>
                     </a>
                     <a href="#" class="text-white hover:text-blue-200 transition text-2xl">
@@ -135,10 +162,11 @@
             <div class="md:w-1/2 flex justify-center relative">
                 <div class="relative w-72 h-72 md:w-96 md:h-96">
                     <div class="absolute inset-0 bg-white opacity-20 rounded-full blur-2xl"></div>
-                    <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full opacity-20 blur-xl animate-pulse"></div>
-                    <img src="./fasil.jpg" 
-                         alt="Fasil Yousf" 
-                         class="relative z-10 w-full h-full object-cover rounded-full border-4 border-white shadow-2xl floating">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full opacity-20 blur-xl animate-pulse">
+                    </div>
+                    <img src="./fasil.jpg" alt="Fasil Yousf"
+                        class="relative z-10 w-full h-full object-cover rounded-full border-4 border-white shadow-2xl floating">
                 </div>
             </div>
         </div>
@@ -155,10 +183,9 @@
             </div>
             <div class="flex flex-col lg:flex-row items-center">
                 <div class="lg:w-2/5 mb-12 lg:mb-0 flex justify-center">
-                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition duration-500">
-                        <img src="./fasil.jpg" 
-                             alt="Fasil Yousf" 
-                             class="w-full h-full object-cover">
+                    <div
+                        class="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition duration-500">
+                        <img src="./fasil.jpg" alt="Fasil Yousf" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <h3 class="text-2xl font-bold">Fasil Yousf</h3>
@@ -169,9 +196,11 @@
                 <div class="lg:w-3/5 lg:pl-16">
                     <h3 class="text-3xl font-bold mb-6">Crafting Digital Excellence</h3>
                     <p class="text-gray-600 mb-8 text-lg leading-relaxed">
-                        I'm a passionate developer with a knack for creating elegant solutions to complex problems. With expertise in multiple domains, I bridge the gap between technology and creativity to deliver impactful digital experiences.
+                        I'm a passionate developer with a knack for creating elegant solutions to complex problems. With
+                        expertise in multiple domains, I bridge the gap between technology and creativity to deliver
+                        impactful digital experiences.
                     </p>
-                    
+
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                         <div class="bg-gray-50 p-6 rounded-xl hover:shadow-md transition">
                             <div class="flex items-center mb-4">
@@ -194,16 +223,20 @@
                             <p class="text-gray-600">Multiple Successful Projects</p>
                         </div>
                     </div>
-                    
+
                     <p class="text-gray-600 mb-8 text-lg leading-relaxed">
-                        When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor adventures. I believe in continuous learning and sharing knowledge with the community.
+                        When I'm not coding, you can find me exploring new technologies, contributing to open-source
+                        projects, or enjoying outdoor adventures. I believe in continuous learning and sharing knowledge
+                        with the community.
                     </p>
-                    
+
                     <div class="flex flex-wrap gap-4">
-                        <a href="#" class="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg transition flex items-center">
+                        <a href="#"
+                            class="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg transition flex items-center">
                             Download CV <i class="fas fa-download ml-2"></i>
                         </a>
-                        <a href="#contact" class="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-100 transition flex items-center">
+                        <a href="#contact"
+                            class="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-100 transition flex items-center">
                             Hire Me <i class="fas fa-briefcase ml-2"></i>
                         </a>
                     </div>
@@ -222,33 +255,37 @@
                 <p class="text-gray-600 max-w-2xl mx-auto text-lg">A blend of technical prowess and creative vision</p>
                 <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-4"></div>
             </div>
-            
+
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="bg-white p-8 rounded-xl text-center shadow-sm hover:shadow-lg transition transform hover:-translate-y-2">
+                <div
+                    class="bg-white p-8 rounded-xl text-center shadow-sm hover:shadow-lg transition transform hover:-translate-y-2">
                     <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-code text-blue-600 text-3xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Web Development</h3>
                     <p class="text-gray-600">Building responsive, performant websites with modern technologies</p>
                 </div>
-                
-                <div class="bg-white p-8 rounded-xl text-center shadow-sm hover:shadow-lg transition transform hover:-translate-y-2">
+
+                <div
+                    class="bg-white p-8 rounded-xl text-center shadow-sm hover:shadow-lg transition transform hover:-translate-y-2">
                     <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-mobile-alt text-purple-600 text-3xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">App Development</h3>
                     <p class="text-gray-600">Creating cross-platform mobile applications with beautiful UIs</p>
                 </div>
-                
-                <div class="bg-white p-8 rounded-xl text-center shadow-sm hover:shadow-lg transition transform hover:-translate-y-2">
+
+                <div
+                    class="bg-white p-8 rounded-xl text-center shadow-sm hover:shadow-lg transition transform hover:-translate-y-2">
                     <div class="bg-pink-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-paint-brush text-pink-600 text-3xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">UI/UX Design</h3>
                     <p class="text-gray-600">Designing intuitive interfaces with exceptional user experience</p>
                 </div>
-                
-                <div class="bg-white p-8 rounded-xl text-center shadow-sm hover:shadow-lg transition transform hover:-translate-y-2">
+
+                <div
+                    class="bg-white p-8 rounded-xl text-center shadow-sm hover:shadow-lg transition transform hover:-translate-y-2">
                     <div class="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-brain text-orange-600 text-3xl"></i>
                     </div>
@@ -256,9 +293,10 @@
                     <p class="text-gray-600">Analyzing complex problems and crafting efficient solutions</p>
                 </div>
             </div>
-            
+
             <div class="text-center mt-16">
-                <a href="./pages/my-skill.html" class="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-xl font-semibold hover:bg-blue-600 hover:text-white btn-hover-effect transition duration-300 inline-flex items-center">
+                <a href="./pages/my-skill.html"
+                    class="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-xl font-semibold hover:bg-blue-600 hover:text-white btn-hover-effect transition duration-300 inline-flex items-center">
                     View All Skills <i class="fas fa-arrow-right ml-3"></i>
                 </a>
             </div>
@@ -272,14 +310,15 @@
                 <h2 class="text-4xl md:text-5xl font-bold mb-4">
                     <span class="gradient-text">Let's Connect</span>
                 </h2>
-                <p class="text-blue-200 max-w-2xl mx-auto text-lg">Have a project in mind or want to discuss opportunities? I'd love to hear from you!</p>
+                <p class="text-blue-200 max-w-2xl mx-auto text-lg">Have a project in mind or want to discuss
+                    opportunities? I'd love to hear from you!</p>
                 <div class="w-20 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mt-4"></div>
             </div>
-            
+
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="lg:w-2/5">
                     <h3 class="text-2xl font-bold mb-8">Get in Touch</h3>
-                    
+
                     <div class="space-y-8">
                         <div class="flex items-start">
                             <div class="bg-white/10 p-4 rounded-xl mr-6 backdrop-blur-sm">
@@ -287,20 +326,22 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-lg mb-2">Email</h4>
-                                <a href="mailto:fasilyousf07@gmail.com" class="text-blue-200 hover:text-white transition">fasilyousf07@gmail.com</a>
+                                <a href="mailto:fasilyousf07@gmail.com"
+                                    class="text-blue-200 hover:text-white transition">fasilyousf07@gmail.com</a>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start">
                             <div class="bg-white/10 p-4 rounded-xl mr-6 backdrop-blur-sm">
                                 <i class="fas fa-phone-alt text-blue-300 text-xl"></i>
                             </div>
                             <div>
                                 <h4 class="font-bold text-lg mb-2">Phone</h4>
-                                <a href="tel:+917006960788" class="text-blue-200 hover:text-white transition">+91 7006960788</a>
+                                <a href="tel:+917006960788" class="text-blue-200 hover:text-white transition">+91
+                                    7006960788</a>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start">
                             <div class="bg-white/10 p-4 rounded-xl mr-6 backdrop-blur-sm">
                                 <i class="fas fa-map-marker-alt text-blue-300 text-xl"></i>
@@ -311,47 +352,56 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="mt-12">
                         <h4 class="font-bold text-xl mb-6">Follow Me</h4>
                         <div class="flex space-x-5">
-                            <a href="https://github.com/fasilyousf" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition backdrop-blur-sm">
+                            <a href="https://github.com/fasilyousf"
+                                class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition backdrop-blur-sm">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/fasil-yousf-6847992a9/" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition backdrop-blur-sm">
+                            <a href="https://www.linkedin.com/in/fasil-yousf-6847992a9/"
+                                class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition backdrop-blur-sm">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
-                            <a href="https://www.instagram.com/fasil.yousf?igsh=MXV4cDV6ZW50ODF1aA==" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition backdrop-blur-sm">
+                            <a href="https://www.instagram.com/fasil.yousf?igsh=MXV4cDV6ZW50ODF1aA=="
+                                class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition backdrop-blur-sm">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition backdrop-blur-sm">
+                            <a href="#"
+                                class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition backdrop-blur-sm">
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="lg:w-3/5">
                     <form class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label for="name" class="block text-blue-200 font-medium mb-2">Your Name</label>
-                                <input type="text" id="name" class="w-full px-5 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-white placeholder-blue-300">
+                                <input type="text" id="name"
+                                    class="w-full px-5 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-white placeholder-blue-300">
                             </div>
                             <div>
                                 <label for="email" class="block text-blue-200 font-medium mb-2">Your Email</label>
-                                <input type="email" id="email" class="w-full px-5 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-white placeholder-blue-300">
+                                <input type="email" id="email"
+                                    class="w-full px-5 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-white placeholder-blue-300">
                             </div>
                         </div>
                         <div class="mb-6">
                             <label for="subject" class="block text-blue-200 font-medium mb-2">Subject</label>
-                            <input type="text" id="subject" class="w-full px-5 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-white placeholder-blue-300">
+                            <input type="text" id="subject"
+                                class="w-full px-5 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-white placeholder-blue-300">
                         </div>
                         <div class="mb-8">
                             <label for="message" class="block text-blue-200 font-medium mb-2">Message</label>
-                            <textarea id="message" rows="5" class="w-full px-5 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-white placeholder-blue-300"></textarea>
+                            <textarea id="message" rows="5"
+                                class="w-full px-5 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-white placeholder-blue-300"></textarea>
                         </div>
-                        <button type="submit" class="w-full px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-xl font-semibold hover:shadow-lg transition flex items-center justify-center btn-hover-effect">
+                        <button type="submit"
+                            class="w-full px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-xl font-semibold hover:shadow-lg transition flex items-center justify-center btn-hover-effect">
                             Send Message <i class="fas fa-paper-plane ml-3"></i>
                         </button>
                     </form>
@@ -370,26 +420,29 @@
                 </div>
                 <div class="flex space-x-8">
                     <a href="#home" class="text-gray-400 hover:text-white transition">Home</a>
-                    <a href="#about" class="text-gray-400 hover:text-white transition">My 1st Project SaaS</a>
-                        <a href="./pages/nexus.html" class="text-white hover:text-blue-200 transition font-medium">My Job (CMO)</a>
+
+                    <a href="./pages/nexus.html" class="text-white hover:text-blue-200 transition font-medium">My Job
+                        (CMO)</a>
                     <a href="./pages/my-skill.html" class="text-gray-400 hover:text-white transition">Skills</a>
                     <a href="./pages/media.html" class="text-gray-400 hover:text-white transition">Contact</a>
                 </div>
             </div>
-            
+
             <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2023 Fasil Yousf. All rights reserved.</p>
                 <div class="flex space-x-6">
                     <a href="https://github.com/fasilyousf" class="text-gray-500 hover:text-white transition text-lg">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/fasil-yousf-6847992a9/" class="text-gray-500 hover:text-white transition text-lg">
+                    <a href="https://www.linkedin.com/in/fasil-yousf-6847992a9/"
+                        class="text-gray-500 hover:text-white transition text-lg">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                     <a href="#" class="text-gray-500 hover:text-white transition text-lg">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="https://www.instagram.com/fasil.yousf?igsh=MXV4cDV6ZW50ODF1aA==" class="text-gray-500 hover:text-white transition text-lg">
+                    <a href="https://www.instagram.com/fasil.yousf?igsh=MXV4cDV6ZW50ODF1aA=="
+                        class="text-gray-500 hover:text-white transition text-lg">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </div>
@@ -398,7 +451,8 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full shadow-lg hidden items-center justify-center btn-hover-effect">
+    <button id="back-to-top"
+        class="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full shadow-lg hidden items-center justify-center btn-hover-effect">
         <i class="fas fa-arrow-up text-xl"></i>
     </button>
 
@@ -406,11 +460,11 @@
         // Mobile menu toggle
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        
+
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-        
+
         // Close mobile menu when clicking a link
         const mobileLinks = document.querySelectorAll('#mobile-menu a');
         mobileLinks.forEach(link => {
@@ -418,10 +472,10 @@
                 mobileMenu.classList.add('hidden');
             });
         });
-        
+
         // Back to top button
         const backToTopBtn = document.getElementById('back-to-top');
-        
+
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
                 backToTopBtn.classList.remove('hidden');
@@ -431,11 +485,11 @@
                 backToTopBtn.classList.remove('flex');
             }
         });
-        
+
         backToTopBtn.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-        
+
         // Typing animation
         const typedTextSpan = document.getElementById('typed');
         const textArray = ["Web Developer", "App Creator", "UI/UX Designer", "Problem Solver", "Tech Enthusiast"];
@@ -444,7 +498,7 @@
         const newTextDelay = 2000;
         let textArrayIndex = 0;
         let charIndex = 0;
-        
+
         function type() {
             if (charIndex < textArray[textArrayIndex].length) {
                 typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
@@ -454,28 +508,28 @@
                 setTimeout(erase, newTextDelay);
             }
         }
-        
+
         function erase() {
             if (charIndex > 0) {
-                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
                 charIndex--;
                 setTimeout(erase, erasingDelay);
             } else {
                 textArrayIndex++;
-                if(textArrayIndex >= textArray.length) textArrayIndex=0;
+                if (textArrayIndex >= textArray.length) textArrayIndex = 0;
                 setTimeout(type, typingDelay + 1100);
             }
         }
-        
-        document.addEventListener("DOMContentLoaded", function() {
+
+        document.addEventListener("DOMContentLoaded", function () {
             setTimeout(type, newTextDelay + 250);
         });
-        
+
         // Add smooth scrolling to all links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
@@ -483,4 +537,5 @@
         });
     </script>
 </body>
+
 </html>

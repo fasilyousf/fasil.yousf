@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - InstruoNexus School Management Software</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .feature-hero {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #9333ea 100%);
+        }
+        .feature-icon {
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover .feature-icon {
+            transform: scale(1.1);
+            color: #4f46e5;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation (same as index.html) -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <!-- Copy the same navigation from index.html -->
+    </nav>
+
+    <!-- Features Hero -->
+    <div class="feature-hero py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                Powerful Features for Your School
+            </h1>
+            <p class="mt-6 max-w-3xl mx-auto text-xl text-indigo-100">
+                Comprehensive tools designed to streamline every aspect of school administration and enhance the learning experience.
+            </p>
+        </div>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Attendance Management -->
+                <div class="feature-card rounded-lg overflow-hidden shadow-md bg-white p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="flex-shrink-0 bg-indigo-100 rounded-md p-4">
+                            <i class="feature-icon fas fa-user-check text-indigo-600 text-2xl"></i>
+                        </div>
+                        <h3 class="ml-4 text-xl font-bold text-gray-900">Attendance Management</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        Track and manage student attendance with our intuitive system. Generate reports, identify patterns, and notify parents automatically.
+                    </p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Real-time attendance tracking</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Automated parent notifications</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Customizable reports</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Biometric integration</span>
+                        </li>
+                    </ul>
+                    <a href="/NEXUS/Pages/features/attendence.html" class="mt-6 inline-flex items-center text-indigo-600 hover:text-indigo-800">
+                        Learn more <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Fee Management -->
+                <div class="feature-card rounded-lg overflow-hidden shadow-md bg-white p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="flex-shrink-0 bg-indigo-100 rounded-md p-4">
+                            <i class="feature-icon fas fa-money-bill-wave text-indigo-600 text-2xl"></i>
+                        </div>
+                        <h3 class="ml-4 text-xl font-bold text-gray-900">Fee Management</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        Simplify fee collection with automated reminders, online payments, and comprehensive tracking.
+                    </p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Multiple payment gateways</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Custom fee structures</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Automated receipts</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Late fee calculations</span>
+                        </li>
+                    </ul>
+                    <a href="features/fee.html" class="mt-6 inline-flex items-center text-indigo-600 hover:text-indigo-800">
+                        Learn more <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Faculty Management -->
+                <div class="feature-card rounded-lg overflow-hidden shadow-md bg-white p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="flex-shrink-0 bg-indigo-100 rounded-md p-4">
+                            <i class="feature-icon fas fa-chalkboard-teacher text-indigo-600 text-2xl"></i>
+                        </div>
+                        <h3 class="ml-4 text-xl font-bold text-gray-900">Faculty Management</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        Manage teacher schedules, workloads, and performance all in one place.
+                    </p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Teacher timetables</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Leave management</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Performance tracking</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Document management</span>
+                        </li>
+                    </ul>
+                    <a href="features/faculty.html" class="mt-6 inline-flex items-center text-indigo-600 hover:text-indigo-800">
+                        Learn more <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Exam Management -->
+                <div class="feature-card rounded-lg overflow-hidden shadow-md bg-white p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="flex-shrink-0 bg-indigo-100 rounded-md p-4">
+                            <i class="feature-icon fas fa-clipboard-list text-indigo-600 text-2xl"></i>
+                        </div>
+                        <h3 class="ml-4 text-xl font-bold text-gray-900">Exam Management</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        Create exam schedules, manage grading, and generate report cards efficiently.
+                    </p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Custom exam creation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Automated grading</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Report card generation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Performance analytics</span>
+                        </li>
+                    </ul>
+                    <a href="features/exam.html" class="mt-6 inline-flex items-center text-indigo-600 hover:text-indigo-800">
+                        Learn more <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Library Management -->
+                <div class="feature-card rounded-lg overflow-hidden shadow-md bg-white p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="flex-shrink-0 bg-indigo-100 rounded-md p-4">
+                            <i class="feature-icon fas fa-book text-indigo-600 text-2xl"></i>
+                        </div>
+                        <h3 class="ml-4 text-xl font-bold text-gray-900">Library Management</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        Track books, manage checkouts, and maintain inventory with our library module.
+                    </p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Barcode scanning</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Due date reminders</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Fine calculation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Inventory management</span>
+                        </li>
+                    </ul>
+                    <a href="features/library.html" class="mt-6 inline-flex items-center text-indigo-600 hover:text-indigo-800">
+                        Learn more <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Communication Portal -->
+                <div class="feature-card rounded-lg overflow-hidden shadow-md bg-white p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="flex-shrink-0 bg-indigo-100 rounded-md p-4">
+                            <i class="feature-icon fas fa-comments text-indigo-600 text-2xl"></i>
+                        </div>
+                        <h3 class="ml-4 text-xl font-bold text-gray-900">Communication Portal</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        Connect teachers, students, and parents through announcements, messaging, and alerts.
+                    </p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Mass notifications</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Two-way messaging</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Event calendars</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Mobile app integration</span>
+                        </li>
+                    </ul>
+                    <a href="features/communication.html" class="mt-6 inline-flex items-center text-indigo-600 hover:text-indigo-800">
+                        Learn more <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-indigo-700">
+        <div class="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                <span class="block">Ready to see InstruoNexus in action?</span>
+                <span class="block">Schedule a demo today.</span>
+            </h2>
+            <a href="demo.html" class="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 sm:w-auto">
+                Request a Demo
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-gray-800">
+        <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Product</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="features.html" class="text-base text-gray-300 hover:text-white">Features</a></li>
+                        <li><a href="pricing.html" class="text-base text-gray-300 hover:text-white">Pricing</a></li>
+                        <li><a href="how-to-use.html" class="text-base text-gray-300 hover:text-white">How to Use</a></li>
+                        <li><a href="updates.html" class="text-base text-gray-300 hover:text-white">Updates</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="about.html" class="text-base text-gray-300 hover:text-white">About</a></li>
+                        <li><a href="blog.html" class="text-base text-gray-300 hover:text-white">Blog</a></li>
+                        <li><a href="careers.html" class="text-base text-gray-300 hover:text-white">Careers</a></li>
+                        <li><a href="press.html" class="text-base text-gray-300 hover:text-white">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Support</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="help.html" class="text-base text-gray-300 hover:text-white">Help Center</a></li>
+                        <li><a href="contact.html" class="text-base text-gray-300 hover:text-white">Contact Us</a></li>
+                        <li><a href="status.html" class="text-base text-gray-300 hover:text-white">System Status</a></li>
+                        <li><a href="privacy.html" class="text-base text-gray-300 hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Connect</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white"><i class="fab fa-facebook mr-2"></i>Facebook</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white"><i class="fab fa-twitter mr-2"></i>Twitter</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white"><i class="fab fa-youtube mr-2"></i>YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between">
+                <p class="text-base text-gray-400">
+                    &copy; 2023 InstruoNexus. All rights reserved.
+                </p>
+                <div class="mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white px-4">Terms</a>
+                    <a href="#" class="text-gray-400 hover:text-white px-4">Privacy</a>
+                    <a href="#" class="text-gray-400 hover:text-white px-4">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </footer>
+</body>
+</html>
